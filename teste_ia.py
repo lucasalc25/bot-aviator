@@ -210,8 +210,8 @@ def criar_modelo(input_shape):
 
 # Função para treinar a IA
 def treinar_modelo(lista_numeros):
-    if len(lista_numeros) < 2:
-        raise ValueError("A lista de números deve ter pelo menos 2 elementos para o treinamento.")
+    if len(lista_numeros) < 20:
+        raise ValueError("A lista de números deve ter pelo menos 20 elementos para o treinamento.")
 
     X, y = preparar_dados(lista_numeros)
     model = criar_modelo(X.shape[1])
