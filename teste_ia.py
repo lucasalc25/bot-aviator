@@ -234,6 +234,9 @@ driver.get(url)
 # Aguarde a página carregar completamente
 time.sleep(10)
 
+# Aumenta o zoom em 50%
+driver.execute_script(f"document.body.style.zoom='{1.50}'")
+
 lista_numeros = capturar_numeros()  # Captura os números
 
 # Verificação da lista capturada
